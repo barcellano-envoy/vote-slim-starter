@@ -13,6 +13,7 @@
         "email": "james@jamesb.biz",
         "issues": "https://github.com/barcellano-envoy/vote-slim-starter/issues"
     },
+    "type": "",
     "require": {
         "php": ">=5.4.0",
         "xsanisty/slim-starter": "*",
