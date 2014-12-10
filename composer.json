@@ -1,0 +1,26 @@
+{
+    "name": "barcellano-envoy/vote-slim-starter",
+    "description": "A Slim Starter module for handling votes",
+    "keywords": ["slim starter", "module", "votes", "voting"],
+    "homepage": "https://github.com/barcellano-envoy/vote-slim-starter",
+    "authors": [
+        {
+            "name": "James Barcellano",
+            "email": "james@jamesb.biz"
+        }
+    ],
+    "support": {
+        "email": "james@jamesb.biz",
+        "issues": "https://github.com/barcellano-envoy/vote-slim-starter/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "xsanisty/slim-starter": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Envoy\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
