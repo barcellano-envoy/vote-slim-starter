@@ -13,11 +13,9 @@
         "email": "james@jamesb.biz",
         "issues": "https://github.com/barcellano-envoy/vote-slim-starter/issues"
     },
-    "type": "cakephp-plugin",
     "require": {
         "php": ">=5.4.0",
-        "xsanisty/slim-starter": "*",
-        "composer/installers": "~1.0"
+        "xsanisty/slim-starter": "*"
     },
     "autoload": {
         "psr-4": {
