@@ -21,10 +21,7 @@ class VoteController extends BaseController
     {
         $this->data['title'] = 'Votes';
         
-        $this->data['votes'] = Vote::with(['entry' => function($query){  $query->select(['id', 'name']); }])->paginateToArray(30);
-        //$queries = \Illuminate\Database\Capsule\Manager::getQueryLog();
-        //print_r($queries);
-        /** render the template */
+        $this->data['votes'] = Vote::paginateToArray(30);
         View::display('@vote/admin/index.twig', $this->data);
     }
 

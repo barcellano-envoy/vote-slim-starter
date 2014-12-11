@@ -22,7 +22,7 @@
                     {% for vote in votes.data %}
                     <tr id="user-row-{{ vote.id }}">
                         <td>{{ vote.id }}</td>
-                        <td>{{ vote.entry.name }}</td>
+                        <td>{{ vote.entry_id }}</td>
                         <td>{{ vote.ip_address_formatted }}</td>
                     </tr>
                     {% endfor %}

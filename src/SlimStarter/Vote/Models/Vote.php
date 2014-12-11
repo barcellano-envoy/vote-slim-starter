@@ -9,12 +9,7 @@ class Vote extends \Slim\Eloquent\Model {
 
     protected $fillable = ['entry_id', 'ip_address'],
               $appends = ['ip_address_formatted'];
-              
-    public function entry()
-    {
-        return $this->belongsTo('\Entry', 'entry_id', 'id');
-    }
-    
+
     public static function addVote(array $vote) {
         if(self::where('ip_address', $vote['ip_address'])->earlierThan(60*24)->first()) {
             return false;
