@@ -5,7 +5,7 @@ use \Model;
 
 use \Carbon\Carbon;
 
-class Vote extends Model {
+class Vote extends \Slim\Eloquent\Model {
 
     protected $fillable = ['entry_id', 'ip_address'],
               $appends = ['ip_address_formatted'];

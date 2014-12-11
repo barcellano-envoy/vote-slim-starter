@@ -8,7 +8,7 @@ use \Route;
 class Initialize extends \SlimStarter\Module\Initializer{
 
     public function getModuleName(){
-        return 'Vote';
+        return '../../vendor/barcellano-envoy/vote-slim-starter/src/SlimStarter/Vote';
     }
 
     public function getModuleAccessor(){
@@ -29,10 +29,10 @@ class Initialize extends \SlimStarter\Module\Initializer{
     }
 
     public function registerAdminRoute(){
-        Route::resource('/vote', 'Vote\Controllers\Admin\VoteController');
+        Route::resource('/vote', 'Envoy\SlimStarter\Vote\Controllers\Admin\VoteController');
     }
     
     public function registerPublicRoute(){
-        Route::resource('/vote', 'Vote\Controllers\VoteController');
+        Route::resource('/vote', 'Envoy\SlimStarter\Vote\Controllers\VoteController');
     }
 }
