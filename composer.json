@@ -15,7 +15,8 @@
     },
     "require": {
         "php": ">=5.4.0",
-        "xsanisty/slim-starter": "*"
+        "xsanisty/slim-starter": "*",
+        "clickcoder/slim-eloquent": "0.0.1"
     },
     "autoload": {
         "psr-4": {
