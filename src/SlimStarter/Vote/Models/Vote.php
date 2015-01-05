@@ -11,9 +11,9 @@ class Vote extends \Slim\Eloquent\Model {
               $appends = ['ip_address_formatted'];
 
     public static function addVote(array $vote) {
-        if(self::where('ip_address', $vote['ip_address'])->earlierThan(60*24)->first()) {
+        /*if(self::where('ip_address', $vote['ip_address'])->earlierThan(60*24)->first()) {
             return false;
-        }
+        }*/
         
         return self::create($vote);
     }
