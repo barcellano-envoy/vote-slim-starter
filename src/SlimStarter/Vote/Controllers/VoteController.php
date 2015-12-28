@@ -59,6 +59,7 @@ class VoteController extends BaseController
         }
 
         Response::headers()->set('Content-Type', 'application/json');
+        Response::setStatus($code);
         Response::setBody(json_encode(
             array(
                 'success'   => $success,
